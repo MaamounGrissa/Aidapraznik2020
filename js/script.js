@@ -2,7 +2,7 @@
     $(function () {
 
         // Adjust header height
-        if ($(window).height >= 600) {
+        if ($(window).height() >= 600) {
 
             $(".image").height($(window).height())
 
@@ -18,7 +18,7 @@
 
         $(window).resize(function () {
 
-            if ($(window).height >= 600) {
+            if ($(window).height() >= 600) {
                 $(".image").height($(window).height())
             } else {
                 $(".image").height(500)

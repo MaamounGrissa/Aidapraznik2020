@@ -17,7 +17,9 @@ if(!empty($mydata) && isset($mydata)){
     // Get Variables
     $name = filter_var($mydata['name'], FILTER_SANITIZE_STRING);
     $subject = filter_var($mydata['subject'], FILTER_SANITIZE_STRING);
-    $msg = filter_var($mydata['message'], FILTER_SANITIZE_STRING);
+   // $msg = filter_var($mydata['message'], FILTER_SANITIZE_STRING);
+   // Delete Filter for Leave HTML Tags in MSG
+    $msg = $mydata['message'];
 
 // Instantiation and passing `true` enables exceptions
 $mail = new PHPMailer(true);

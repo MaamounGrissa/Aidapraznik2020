@@ -384,7 +384,7 @@
 
                     "name": contactName,
                     "subject": "Email from Contact Form",
-                    "message": '<h3>Email From : ' + contactName + '</h3><h3>Telephone : ' + contactPhone + '</h3>' +
+                    "message": '<h3>Email From : ' + contactName + '</h3><br><h3>Telephone : ' + contactPhone + '</h3><br>' +
                         '<p><strong>Message : </strong>' + contactMsg + '</p>'
 
                 }

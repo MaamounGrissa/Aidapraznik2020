@@ -225,7 +225,7 @@
 
                     "name": name,
                     "subject": "Email from Quiz App",
-                    "message": '<h3>Email From : ' + name + '</h3><h3>Telephone : ' + phone + '</h3>' +
+                    "message": '<h3>Email From : ' + name + '</h3><br><h3>Telephone : ' + phone + '</h3>' +
                         '<p><strong>Quest 1: </strong> Вам нужен Дед Мороз со Снегурочкой или без? <br>' + rps1 + '</p>' +
                         '<p><strong>Quest 2: </strong> Артисты нужны ? <br>' + rps2 + '</p>' +
                         '<p><strong>Quest 3: </strong> Классическое поздравление или сказка ? <br>' + rps3 + '</p>' +

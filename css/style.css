@@ -140,6 +140,7 @@ body {
 @media screen and (max-width: 600px) {
   .top-bar .phone {
     width: 40%;
+    margin-right: 30px;
   }
 }
 
@@ -249,8 +250,24 @@ body {
 @media screen and (max-width: 600px) {
   .top-bar #open-menu {
     display: block;
-    font-size: 40px;
+    position: absolute;
+    top: 7px;
+    right: 4px;
+    font-size: 30px;
     margin-right: 5px;
+  }
+}
+
+.top-bar .menu-txt {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .top-bar .menu-txt {
+    display: block;
+    position: absolute;
+    top: 38px;
+    right: 7px;
   }
 }
 
@@ -636,6 +653,7 @@ article section h2 {
   font-size: 1.95vw;
   color: #E20338;
   margin: 4vw;
+  text-align: center;
 }
 
 @media screen and (max-width: 600px) {
@@ -875,22 +893,73 @@ article section#performance .active {
 
 article section#performance .galery {
   margin-top: 30px;
-  height: 95vw;
+  height: 153vw;
+}
+
+@media screen and (max-width: 600px) {
+  article section#performance .galery {
+    height: 765px;
+  }
 }
 
 article section#performance .galery div {
-  width: 32%;
-  height: 18vw;
-  margin: 10px 1% 0 0;
+  width: 32.3%;
+  height: 21vw;
+  margin: 0 1% 10px 0;
   float: left;
-  border: 3px solid #EEE;
   border-radius: 5px;
-  overflow: hidden;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 600px) {
+  article section#performance .galery div {
+    height: 100px;
+  }
+}
+
+article section#performance .galery div p {
+  text-align: center;
+}
+
+article section#performance .galery div.ot5000 {
+  width: 70%;
+  margin-left: 15%;
+  height: 34vw;
+}
+
+@media screen and (max-width: 600px) {
+  article section#performance .galery div.ot5000 {
+    margin-left: 0;
+    width: 100%;
+    height: 235px;
+  }
+}
+
+article section#performance .galery div.ot7000 {
+  width: 49%;
+  height: 32vw;
+}
+
+@media screen and (max-width: 600px) {
+  article section#performance .galery div.ot7000 {
+    height: 150px;
+  }
+}
+
+article section#performance .galery div.ot7000 p {
+  margin-left: -100%;
+}
+
+@media screen and (max-width: 600px) {
+  article section#performance .galery div.ot10000 p {
+    margin-left: -50%;
+  }
 }
 
 article section#performance .galery div iframe, article section#performance .galery div img {
+  border: 3px solid #EEE;
   width: 100%;
-  height: 100%;
+  height: 85%;
   border-radius: 5px;
   cursor: pointer;
 }

@@ -304,6 +304,32 @@
 
             $(this).click(function () {
                 $(this).addClass("active").siblings().removeClass("active")
+                /*
+                if ($(this).attr("data-filter") == ".ot5000" ) {
+                    $("div.ot5000").css({
+                        width: "100%",
+                        height: "250px"
+                    })
+                } else {
+                    $("div.ot5000").css({
+                        width: "32%",
+                        height: "90px"
+                    })
+                }
+
+                if ($(this).attr("data-filter") == ".ot7000" ) {
+                    $("div.ot7000").css({
+                        width: "49%",
+                        height: "180px"
+                    })
+                } else {
+                    $("div.ot7000").css({
+                        width: "32%",
+                        height: "90px"
+                    })
+                }
+                */
+
             })
 
         })

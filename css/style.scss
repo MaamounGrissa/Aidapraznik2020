@@ -115,6 +115,7 @@ body {
 
         @media screen and (max-width: 600px) {
             width: 40%;
+            margin-right: 30px;
         }
 
         img {
@@ -204,8 +205,21 @@ body {
 
         @media screen and (max-width: 600px) {
             display: block;
-            font-size: 40px;
+            position: absolute;
+            top: 7px;
+            right: 4px;
+            font-size: 30px;
             margin-right: 5px;
+        }
+    }
+
+    .menu-txt {
+        display: none;
+        @media screen and (max-width: 600px) {
+            display: block;
+            position: absolute;
+            top: 38px;
+            right: 7px;
         }
     }
 }
@@ -503,6 +517,7 @@ article {
             font-size: $fontSize * 1.5;
             color: $myColor;
             margin: 4vw;
+            text-align: center;
 
             @media screen and (max-width: 600px) {
                 font-size: 20px;
@@ -701,18 +716,56 @@ article {
 
             .galery {
                 margin-top: 30px;
-                height: 95vw;
+                height: 153vw;
+                @media screen and (max-width: 600px) {
+                    height: 765px;
+                }
+                
                 div {
-                    width: 32%;
-                    height: 18vw;
-                    margin: 10px 1% 0 0;
+                    width: 32.3%;
+                    height: 21vw;
+                    margin: 0 1% 10px 0;
                     float: left;
-                    border: 3px solid #EEE;
                     border-radius: 5px;
-                    overflow: hidden;
+                    white-space: nowrap;
+                    @media screen and (max-width: 600px) {
+                        height: 100px;
+                    }
+                    p {
+                        text-align: center;
+                    }
+                    &.ot5000 {
+                        width: 70%;
+                        margin-left: 15%;
+                        height: 34vw; //2
+                        @media screen and (max-width: 600px) {
+                            margin-left: 0;
+                            width: 100%;
+                            height: 235px;
+                        }
+                    }
+                    &.ot7000 {
+                        width: 49%;
+                        height: 32vw;
+                        @media screen and (max-width: 600px) {
+                            height: 150px;
+                        }
+                        p {
+                            margin-left: -100%;
+                        }
+                    }
+                    &.ot10000 {
+                        p {
+                            @media screen and (max-width: 600px) {
+                                margin-left: -50%;
+                            }
+                        }
+                    }
+                    
                     iframe, img {
+                        border: 3px solid #EEE;
                         width: 100%;
-                        height: 100%;
+                        height: 85%;
                         border-radius: 5px;
                         cursor: pointer;
                     }

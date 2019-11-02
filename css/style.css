@@ -28,6 +28,10 @@ body {
   }
 }
 
+.clearfix {
+  clear: both;
+}
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -201,8 +205,8 @@ body {
 }
 
 .top-bar nav ul li {
-  font-size: 1.43vw;
-  width: 22%;
+  font-size: 1.3vw;
+  width: 20%;
   height: 5vw;
   line-height: 5vw;
   text-align: center;
@@ -620,10 +624,11 @@ header .image .quiz .btn input[type="submit"] {
   display: none;
 }
 
-/* PRICE - PHOTOS(Slider) - REVIEWS - CONTACT => STYLE */
+/* PRICE - PERFORMANCE - PHOTOS(Slider) - REVIEWS - CONTACT => STYLE */
 article section {
   margin: 3vw 0;
   /* Table Style */
+  /* Performances */
   /* Style of Slider in file owl.carousel.css*/
 }
 
@@ -841,6 +846,53 @@ article section > p {
   margin: 1vw auto;
   text-align: center;
   line-height: 1.8;
+}
+
+article section#performance button {
+  padding: 10px 15px;
+  background-color: white;
+  color: #E20338;
+  font-weight: bold;
+  border: 2px solid #E20338;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  article section#performance button {
+    padding: 5px;
+  }
+  article section#performance button:first-of-type {
+    margin-left: 5px;
+  }
+}
+
+article section#performance .active {
+  background-color: #E20338;
+  color: white;
+  border: none;
+}
+
+article section#performance .galery {
+  margin-top: 30px;
+  height: 95vw;
+}
+
+article section#performance .galery div {
+  width: 32%;
+  height: 18vw;
+  margin: 10px 1% 0 0;
+  float: left;
+  border: 3px solid #EEE;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+article section#performance .galery div iframe, article section#performance .galery div img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 article section .review {

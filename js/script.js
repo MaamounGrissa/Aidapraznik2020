@@ -47,15 +47,20 @@
                         break
                     case 1:
                         $([document.documentElement, document.body]).animate({
-                            scrollTop: $("#photos").offset().top
+                            scrollTop: $("#performance").offset().top
                         }, 1500)
                         break
                     case 2:
                         $([document.documentElement, document.body]).animate({
-                            scrollTop: $("#reviews").offset().top
+                            scrollTop: $("#photos").offset().top
                         }, 1500)
                         break
                     case 3:
+                        $([document.documentElement, document.body]).animate({
+                            scrollTop: $("#reviews").offset().top
+                        }, 1500)
+                        break
+                    case 4:
                         $([document.documentElement, document.body]).animate({
                             scrollTop: $("#contact-us").offset().top
                         }, 1500)
@@ -291,6 +296,39 @@
             })
         })
 
+        // Filtering Plugin
+
+         // Galery Filtering Menu
+
+        $("#performance button").each(function () {
+
+            $(this).click(function () {
+                $(this).addClass("active").siblings().removeClass("active")
+            })
+
+        })
+
+        // Filtering By Plugin Mix It Up
+
+        var mixer = mixitup('#container');
+
+        // Display Images on Full Screen
+
+         $('#performance img').click(function(){
+            var src = $(this).attr('src');
+            $('<div>').css({
+                background: 'RGBA(0,0,0,.5) url('+src+') no-repeat center',
+                backgroundSize: 'contain',
+                width:'100%', height:'100%',
+                position:'fixed',
+                zIndex:'10000',
+                top:'0', left:'0',
+                cursor: 'zoom-out'
+            }).click(function(){
+                $(this).remove();
+            }).appendTo('body');
+        });
+
         // SLIDER
 
         $(".owl-carousel").owlCarousel({
@@ -411,17 +449,16 @@
         })
 
 
-
         // Nice Scroll Plugin
-
-        /*
 
         $("html").niceScroll({
             cursorcolor:"#E20338",
             cursorwidth:"10px",
+            cursorborder: "1px solid #EEE",
+            cursoropacitymax: ".8",
+
         })
 
-        */
     })
 
 
